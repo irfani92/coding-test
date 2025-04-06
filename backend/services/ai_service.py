@@ -5,7 +5,6 @@ class AIService:
         """
         Generates an AI response using Google GenAI based on the question and provided data.
         """
-        print(data)
         prompt = f"Based on the following data: {data}\nAnswer the question: {question}"
         try:
             response = settings.model.generate_content(prompt)
