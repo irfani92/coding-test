@@ -6,7 +6,7 @@ import google.generativeai as genai
 load_dotenv()
 
 class Settings:
-    allowed_origins = os.getenv("ALLOWED_ORIGINS", "").split(",")
+    allowed_origins = os.getenv("ALLOWED_ORIGINS")
     ai_api_key = os.getenv("AI_API_KEY")
     
     api_title = "Sales AI API"
